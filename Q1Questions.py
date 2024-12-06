@@ -1,2 +1,4 @@
-# Create a program that will accept a multiple choice question, four answers, and the letter of correct answer. 
-# This will be six lines, and then store the questions in the file questions.txt.
+filehandle = open("questions.txt","w"); print("Question?"); filehandle.write(input()+'\n')
+for i in range(4):
+    print("Question :", i+1); filehandle.write(input()+'\n')
+print("Correct Response : (State Number)"); filehandle.write(input()+'\n'); filehandle.close()
